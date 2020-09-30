@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CC6B6B99-4D10-4CB4-B306-DD399005185B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Buckets</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0523AC21-7E38-47EF-BC51-EC120A9AFD08</key>
+		<string>https://github.com/ginacollecchia/git_stanford.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MUS256A/Buckets/Buckets.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0523AC21-7E38-47EF-BC51-EC120A9AFD08</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ginacollecchia/git_stanford.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0523AC21-7E38-47EF-BC51-EC120A9AFD08</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0523AC21-7E38-47EF-BC51-EC120A9AFD08</string>
+			<key>IDESourceControlWCCName</key>
+			<string>git_stanford</string>
+		</dict>
+	</array>
+</dict>
+</plist>

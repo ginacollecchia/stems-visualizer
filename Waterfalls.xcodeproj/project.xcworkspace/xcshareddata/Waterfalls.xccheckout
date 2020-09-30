@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8CA082E8-9BEF-49DF-827C-2C4A15090A42</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Waterfalls</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD8A8D77-6408-4C4A-9B77-B5AD8581A50C</key>
+		<string>http://github.com/ginacollecchia/git_stanford</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MUS256A/Waterfalls/Waterfalls.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD8A8D77-6408-4C4A-9B77-B5AD8581A50C</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://github.com/ginacollecchia/git_stanford</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD8A8D77-6408-4C4A-9B77-B5AD8581A50C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD8A8D77-6408-4C4A-9B77-B5AD8581A50C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>git_stanford</string>
+		</dict>
+	</array>
+</dict>
+</plist>

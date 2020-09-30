@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<title>Stems Visualizer by Regina Collecchia</title>
+
+<style type="text/css">
+	      @font-face{font-family: 'Alice'; font-style: normal; font-weight: normal; src:local('Alice'), local('Alice-Regular'), url('alice.woff') format('woff');} 
+		  body{font-family:Alice,Georgia,Times New Roman,serif;font-size:20px;background-color: #ffffff; }
+		  a{text-decoration:none;}
+	      img { border: 0px; }
+		  p{width: 800px;}
+</style>
+
+<body>
+	
+	<h1><strong>Stems Visualizer</strong></h1>
+	<h3><it>By Gina Collecchia</it></h3>
+	<div id="description">
+		<h2><strong>Description</strong></h2>
+		<p>"Stems Visualizer" is music visualization software meant for multiple tracks of a single song. Each track is visualized with an FFT waterfall, left-to-right. The user may input any stereo WAV files and a corresponding bitmap (BMP) image for the type of track. The images react to the power of the input signal, averaged over several buffers of the audio signal. </p> 
+	
+	
+		<img src="images/stems-screenshot.png" style="width:600px; height:auto;" />
+		<p>The master tracks from The Beatles' "And Your Bird Can Sing" are shown here as an example. Track 1 is the drum track, with a bit of flange-y guitar palm mutes. Track 2 has the guitars, 3 the vocal harmonies, 4 the bass, and the fifth track is a tambourine and the vocal introduction. These can be soloed by the keypresses '1', '2', '3', etc., and all the stems can be played with '0' which is the default.</p>
+
+
+		<p>The camera angle can be changed with 'j' (left) and 'l' (right). The gain of the FFT can be modified with keystrokes 'i' (+) and 'k' (-). You can also <a href="http://www.youtube.com/watch?v=t_MNI8qRb6s" target="none">put a donk on it</a> should you need, with the "d" keypress.</p>
+		<img src="images/donk-and-spin.png" style="width:600px; height:auto;" />
+				
+	</div>
+	<div id="code">
+		<h2><strong>Code</strong></h2>
+		<p>The code is all available on Github, <a href="https://github.com/ginacollecchia/git_stanford/tree/master/MUS256A/Waterfalls" target="none">here</a>. The file <a href="https://github.com/ginacollecchia/git_stanford/blob/master/MUS256A/Waterfalls/Waterfalls/Waterfalls.cpp" target="none">Waterfalls.cpp</a> handles most of the GL functions. Since I wanted to display multiple waterfalls, I made a class called Waterfall (<a href="https://github.com/ginacollecchia/git_stanford/blob/master/MUS256A/Waterfalls/Waterfalls/Waterfall.h" target="none">Waterfall.h</a>, <a href="https://github.com/ginacollecchia/git_stanford/blob/master/MUS256A/Waterfalls/Waterfalls/Waterfall.cpp" target="none">Waterfall.cpp</a>), which also contains some GL functions to draw the FFT, and put a donk on that waterfall. </p>
+			
+		<h3>Building</h3>
+		<p>I recommend opening the Xcode project file, for which you should only need to change the path to your directory, as the makefile may be outdated. However, to make the project in Terminal, just say "make" and then "./Waterfalls".</p>
+			
+		<p>You'll also need WAVE soundfiles, which you need to make a directory called "sndfiles" within the Waterfalls directory. <a href="sndfiles.zip">Here are some stems</a> to get you started.</p>
+	</div>
+	
+	<div id="comments">
+		<h2><strong>Comments and Future Work</strong></h2>
+		<p>There are some bugs that I couldn't quite iron out, namely the first audio buffer which is likely a glTranslatef / glScalef bug or order issue. Furthermore, the FFT doesn't look perfect to me: every other buffer appears to be 0, and the range doesn't look quite right (middle half?). There is also some mysterious clicks in the sound files when they are soloed. Check the repo later for updates to these issues.</p>
+		<p>Using WvIn.h from the Stk took a lot of time and headache, and I wonder if FileWvIn.h is a better way to go. FourTextures.cpp contains an example usage of RgbImage.h by Samuel Buss which I used to display the stem images of the drums, guitar, and other tracks. These are bitmap (BMP) images.</p>
+		<p>I'd like to improve moving around the scene with use of the arrow keys. I'd love to implement a pitch-tracker on this sort of thing too, and add different kinds of visualization of FFT waterfalls such as cubes or spectrograms. The file handling could also be improved, to make it easier to play something besides "And Your Bird Can Sing"; the number of soundfiles is hard-coded in certain places. Finally, the Waterfall class is a bit disorganized, and shouldn't take as many arguments as it does, or should do something different with those arguments, and so on.</p>
+		<p>Oh, by the way, Thread.h, vector3d.h, def.h, and gfx.h are unused files.</p>
+	</div>
+	<br/>
+
+	<p style="font-size:14px;"><i>11/5/2013, HW3 for MUS256A taught by Ge Wang</i></p>
+
+</body>
+</html>
